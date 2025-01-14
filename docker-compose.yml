@@ -1,0 +1,45 @@
+version: "3.8"
+
+services:
+  mysql:
+    container_name: mysql
+    image: mysql:latest
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: Milan@007
+      MYSQL_DATABASE: BankDB
+    networks:
+      - bankapp
+    volumes:
+      - mysql-data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "-h", "ping", "localhost", "-uroot", "-pMilan@007"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 30s
+    restart: always
+
+  bankapp:
+    build: .
+    container_name: bankapp
+    image: dockervasu100/springboot-bankapp:latest 
+    ports:
+      - 8080:8080
+    environment:
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURE_URL: "jdbc:mysql://mysql:3306/BankDB?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC"
+      SPRING_DATASOURCE_PASSWORD: Milan@007
+
+    networks:
+      - bankapp
+    depends_on:
+      - mysql
+    restart: always
+
+volumes:
+ mysql-data:
+
+networks:
+  bankapp:
