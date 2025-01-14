@@ -5,6 +5,9 @@
 
 <img width="1680" alt="Screenshot 2025-01-14 at 2 13 48 PM" src="https://github.com/user-attachments/assets/9b79dc76-2e80-4e0e-93bb-28b828d1bab3" />
 
+<img width="1671" alt="Screenshot 2025-01-14 at 2 13 56 PM" src="https://github.com/user-attachments/assets/89f5cf17-b25e-4b28-8cb1-3ad7c55523fc" />
+
+
 
 ## Tech stack used in this project:
 - GitHub (Code)
