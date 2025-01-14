@@ -1,10 +1,10 @@
 ## End-to-End Bank Application Deployment using DevSecOps on AWS EKS
 - This is a multi-tier bank an application written in Java (Springboot).
 
-![Login diagram](<img width="1675" alt="Screenshot 2025-01-14 at 2 09 27 PM" src="https://github.com/user-attachments/assets/30ec030e-a995-4711-8ae3-32ce3ad94609" />
-)
-![Transactions diagram](<img width="1680" alt="Screenshot 2025-01-14 at 2 13 48 PM" src="https://github.com/user-attachments/assets/9b79dc76-2e80-4e0e-93bb-28b828d1bab3" />
-)
+<img width="1675" alt="Screenshot 2025-01-14 at 2 09 27 PM" src="https://github.com/user-attachments/assets/30ec030e-a995-4711-8ae3-32ce3ad94609" />
+
+<img width="1680" alt="Screenshot 2025-01-14 at 2 13 48 PM" src="https://github.com/user-attachments/assets/9b79dc76-2e80-4e0e-93bb-28b828d1bab3" />
+
 
 ## Tech stack used in this project:
 - GitHub (Code)
